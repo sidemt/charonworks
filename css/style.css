@@ -1,0 +1,25 @@
+body {
+  --cw-dark-gray: #434343;
+  --cw-dark-red: #A52A00;
+  color: var(--cw-dark-gray);
+}
+
+h1, h2 {
+  font-family: 'Calisto MT', 'Times New Roman', Times, serif;
+}
+
+.card {
+  width: 20rem;
+}
+
+.card-text {
+  font-size: .8rem;
+}
+
+.tech-info {
+  font-size: .7rem;
+}
+
+.card-link {
+  font-size: .8rem;
+}

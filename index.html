@@ -1,12 +1,216 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Charonworks</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+
 </head>
+
 <body>
-  
+
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="assets/charonworks3.png" height="30" alt="Charonworks">
+    </a>
+  </nav>
+
+  <h1 class="calisto">Charonworks</h1>
+
+  <h2>Portfolio</h2>
+  <p>
+    これまでに作成したウェブサイトの一部です。<br>
+    いずれもレスポンシブ対応しておりますのでPC、スマホどちらからもご覧いただけます。
+  </p>
+
+  <div>
+    <p>
+      Ruby on Railsを使用して作成したサイトです。<br>
+      データベース、ユーザー登録機能などがあります。
+    </p>
+    <div class="card">
+      <img src="assets/on-the-day.PNG" width="300px" alt="On The Day 画面イメージ">
+      <div class="card-body">
+        <h5 class="card-title"><a href="https://on-the-day.herokuapp.com/" target="_blank">On The Day</a></h5>
+        <p class="card-text">
+          <a href="https://www.100daysofcode.com/">#100DaysOfCode</a>というプログラミング学習を習慣化する活動に参加している人に向けたサイトです。<br>
+          ハッシュタグと日数の情報でツイートを検索します。
+        </p>
+        <ul class="card-text">
+          <li>Twitter認証によるログイン</li>
+          <li>Twitter APIを使用したツイート検索、埋め込みツイート表示</li>
+          <li>ツイートボタン</li>
+        </ul>
+        <p class="card-text tech-info">
+          使用言語: Ruby, JavaScript, HTML, Sass(SCSS), etc. <br>
+          使用フレームワーク: Ruby on Rails, Bootstrap, etc. <br>
+          その他: Twitter API, Heroku
+        </p>
+        <a href="https://github.com/sidemt/on-the-day" class="card-link" target="_blank">GitHubでコードを見る</a>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <p>
+      オンラインプログラミング講座<a href="https://www.freecodecamp.org/">freeCodeCamp</a>の課題として作成したウェブページです。<br>
+    </p>
+
+    <div class="card">
+      <img src="assets/local-weather.PNG" width="300px" alt="Local Weather App 画面イメージ">
+      <div class="card-body">
+        <h5 class="card-title"><a href="https://sidemt.github.io/local-weather/" target="_blank">Local Weather App</a></h5>
+        <p class="card-text">
+          位置情報を許可すると現在地の天気を表示します。
+        </p>
+        <ul class="card-text">
+          <li>位置情報の利用</li>
+          <li>天気に応じて背景画像を変更</li>
+          <li>天気情報はfreeCodeCampのAPIを使用</li>
+        </ul>
+        <p class="card-text tech-info">
+          使用言語: JavaScript, HTML, CSS <br>
+          使用フレームワーク: jQuery <br>
+        </p>
+        <a href="https://github.com/sidemt/local-weather" class="card-link" target="_blank">GitHubでコードを見る</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/pomodoro-clock.PNG" width="300px" alt="Pomodoro Clock 画面イメージ">
+      <div class="card-body">
+        <h5 class="card-title"><a href="https://sidemt.github.io/pomodoro-clock/" target="_blank">Pomodoro Clock</a></h5>
+        <p class="card-text">
+          ポモドーロテクニックと呼ばれる25分作業・5分休憩のサイクルを繰り返すタイマーです。
+        </p>
+        <ul class="card-text">
+          <li>作業中と休憩中で背景色を変更</li>
+          <li>タイマー終了時に音を再生</li>
+        </ul>
+        <p class="card-text tech-info">
+          使用言語: JavaScript, HTML, CSS <br>
+          使用フレームワーク: React, Bootstrap <br>
+        </p>
+        <a href="https://github.com/sidemt/pomodoro-clock" class="card-link" target="_blank">GitHubでコードを見る</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/random-quote.PNG" width="300px" alt="Random Quote Machine 画面イメージ">
+      <div class="card-body">
+        <h5 class="card-title"><a href="https://sidemt.github.io/random-quote/" target="_blank">Random Quote Machine</a></h5>
+        <p class="card-text">
+          ランダムに名言、格言を表示します。
+        </p>
+        <ul class="card-text">
+          <li>ツイートボタンから表示内容を含めたツイートが可能</li>
+          <li>表示する名言、格言は既存API(Quotes on Design)から取得</li>
+        </ul>
+        <p class="card-text tech-info">
+          使用言語: JavaScript, HTML, CSS <br>
+          使用フレームワーク: jQuery <br>
+        </p>
+        <a href="https://github.com/sidemt/random-quote" class="card-link" target="_blank">GitHubでコードを見る</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/wikipedia-viewer.PNG" width="300px" alt="Wikipedia Viewer 画面イメージ">
+      <div class="card-body">
+        <h5 class="card-title"><a href="https://sidemt.github.io/wikipedia-viewer/" target="_blank">Wikipedia Viewer</a></h5>
+        <p class="card-text">
+          入力されたキーワードでWikipediaの記事を検索します。
+        </p>
+        <ul class="card-text">
+          <li>Wikipedia APIを使用した記事検索</li>
+          <li>APIで取得した概要を検索結果に表示、該当記事へのリンクを生成</li>
+          <li>Ajaxを使用して画面の一部のみを更新</li>
+        </ul>
+        <p class="card-text tech-info">
+          使用言語: JavaScript, HTML, CSS <br>
+          使用フレームワーク: jQuery, Ajax <br>
+          その他: Wikipedia API
+        </p>
+        <a href="https://github.com/sidemt/wikipedia-viewer" class="card-link" target="_blank">GitHubでコードを見る</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/js-calculator.PNG" width="300px" alt="JavaScript Calculator 画面イメージ">
+      <div class="card-body">
+        <h5 class="card-title"><a href="https://sidemt.github.io/js-calculator/" target="_blank">JavaScript Calculator</a></h5>
+        <p class="card-text">
+          JavaScript、Reactで作成した簡単な電卓です。
+        </p>
+        <ul class="card-text">
+          <li>CSS grid を使用してボタンを配置</li>
+        </ul>
+        <p class="card-text tech-info">
+          使用言語: JavaScript, HTML, CSS <br>
+          使用フレームワーク: React, Bootstrap <br>
+        </p>
+        <a href="https://github.com/sidemt/js-calculator" class="card-link" target="_blank">GitHubでコードを見る</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/drum-machine.PNG" width="300px" alt="Drum Machine 画面イメージ">
+      <div class="card-body">
+        <h5 class="card-title"><a href="https://sidemt.github.io/drum-machine/" target="_blank">Drum Machine</a></h5>
+        <p class="card-text">
+          キー入力または画面上のボタンをクリックすると音を再生します。
+        </p>
+        <ul class="card-text">
+          <li>キー入力をトリガーにしてJavaScriptコードを実行</li>
+          <li>SCSSのmixinを使用してCSSのコードを共通化、再利用</li>
+        </ul>
+        <p class="card-text tech-info">
+          使用言語: JavaScript, HTML, Sass(SCSS) <br>
+          使用フレームワーク: React, Bootstrap <br>
+        </p>
+        <a href="https://github.com/sidemt/drum-machine" class="card-link" target="_blank">GitHubでコードを見る</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/markdown-previewer.PNG" width="300px" alt="Markdown Previewer 画面イメージ">
+      <div class="card-body">
+        <h5 class="card-title"><a href="https://sidemt.github.io/markdown-previewer/" target="_blank">Markdown Previewer</a></h5>
+        <p class="card-text">
+          Markdown という記法で入力した文章をプレビューします。
+        </p>
+        <ul class="card-text">
+          <li>入力内容をリアルタイムにプレビュー</li>
+          <li>MarkdownからHTMLへの変換には既存ライブラリ(Marked)を使用</li>
+        </ul>
+        <p class="card-text tech-info">
+          使用言語: JavaScript, HTML, CSS <br>
+          使用フレームワーク: React, Bootstrap <br>
+        </p>
+        <a href="https://github.com/sidemt/markdown-previewer" class="card-link" target="_blank">GitHubでコードを見る</a>
+      </div>
+    </div>
+
+    <h2>Contact</h2>
+    <p>
+      Email: <a href="mailto:charonworks.info@gmail.com">charonworks.info@gmail.com</a>
+    </p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
