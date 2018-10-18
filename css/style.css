@@ -8,8 +8,17 @@ h1, h2 {
   font-family: 'Calisto MT', 'Times New Roman', Times, serif;
 }
 
+.gallery-row {
+  padding: 0.1rem;
+}
+
+.gallery-col {
+  padding: 0.3rem;
+}
+
 .card {
-  width: 20rem;
+  height: 100%;
+  width: 100%;
 }
 
 .card-text {
