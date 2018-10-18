@@ -244,9 +244,38 @@
         </div>
 
         <h2 id="contact">Contact</h2>
+
         <p>
           Email: <a href="mailto:charonworks.info@gmail.com">charonworks.info@gmail.com</a>
         </p>
+
+        <p>
+          以下のお問い合わせフォームからもお問い合わせいただけます。
+        </p>
+        <div class="row">
+          <div class="formTable form-group col-lg-6 col-sm-12">
+            <form method="post" action="php/mail.php">
+
+              <label for="name-form">お名前 <span class="required">*</span></label>
+              <input size="20" type="text" name="お名前" id="name-form" class="form-control" required>
+
+              <label for="company-form">貴社名・団体名</label>
+              <input size="20" type="text" name="貴社名・団体名" id="company-form" class="form-control">
+
+              <label for="email-form">Email（半角）<span class="required">*</span></label>
+              <input size="30" type="email" name="Email" id="email-form" class="form-control" required>
+
+              <label for="content-form">お問い合わせ内容 <span class="required">*</span></label>
+              <textarea name="お問い合わせ内容" cols="50" rows="5" id="content-form" class="form-control" required></textarea>
+
+              <div class="submit-buttons">
+                <input type="submit" value="確認" class="btn btn-primary">　<input type="reset" value="リセット" class="btn btn-secondary">
+              </div>
+
+            </form>
+          </div>
+        </div>
+
       </div>
     </div>
     <!-- Bootstrap JS -->

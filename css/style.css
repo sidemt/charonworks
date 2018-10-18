@@ -1,6 +1,7 @@
 body {
   --cw-dark-gray: #434343;
   --cw-dark-red: #A52A00;
+  --brighter-red: #e60000;
   color: var(--cw-dark-gray);
 }
 
@@ -71,4 +72,24 @@ h3 {
 
 .card-link {
   font-size: .8rem;
+}
+
+form {
+  font-size: .8rem;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+.required {
+  color: var(--brighter-red);
+}
+
+.submit-buttons {
+  padding: .5rem 0;
+}
+
+.btn {
+  width: 8rem;
 }
