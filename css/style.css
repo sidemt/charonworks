@@ -1,28 +1,47 @@
-body {
-  --cw-dark-gray: #434343;
-  --cw-dark-red: #A52A00;
-  --brighter-red: #e60000;
-  color: var(--cw-dark-gray);
+html {
+  scroll-behavior: smooth;
 }
 
-h1, h2, h3 {
-  font-family: 'Calisto MT', 'Times New Roman', Times, serif;
+body {
+  --cw-dark-gray: #434343;
+  --cw-gray: #b1b1b1;
+  --cw-dark-red: #a52a00;
+  --brighter-red: #e60000;
+  color: var(--cw-dark-gray);
+  background-attachment: fixed;
+  background-color: #434343;
+  background-image: url("../assets/bg02.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Calisto MT", "Times New Roman", Times, serif;
 }
 
 h1 {
-  font-size: 2.6rem;
+  font-size: 2.3rem;
   font-weight: 200;
+}
+
+.red-line {
+  border-bottom: 2px solid hsl(15, 100%, 32%, 0.2);
 }
 
 h2 {
+  border-bottom: 3px solid hsl(0, 0%, 100%, 0.2);
   font-size: 1.9rem;
   font-weight: 200;
-  padding-top: 60px;
+  padding-top: 70px;
 }
 
 h3 {
+  border-bottom: 3px solid hsl(0, 0%, 100%, 0.2);
   font-size: 1.5rem;
   font-weight: 200;
+  padding-top: 10px;
 }
 
 .bg-dark-cw {
@@ -30,14 +49,27 @@ h3 {
 }
 
 .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  background-color: hsl(0, 0%, 100%, 0.7);
+  border-radius: 2px;
+  padding: 50px 3rem;
+  margin-top: 90px;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-left: auto;
 }
 
 .header {
-  text-align: center;
-  padding-top: 6rem;
-  padding-bottom: 4rem;
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 0%, 26%, 0.7),
+    hsl(0, 0%, 100%, 0.1)
+  );
+  border-radius: 2px;
+  text-align: right;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .project {
@@ -60,22 +92,23 @@ h3 {
 
 .gallery-image {
   width: 100%;
+  height: auto;
 }
 
 .card-text {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .tech-info {
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .card-link {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 form {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 label {
@@ -87,9 +120,15 @@ label {
 }
 
 .submit-buttons {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 .btn {
   width: 8rem;
+}
+
+footer {
+  color: hsl(0, 0%, 100%, 0.7);
+  text-align: center;
+  padding-bottom: 1.5rem;
 }
