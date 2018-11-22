@@ -57,13 +57,38 @@
     <div class="portfolio section">
       <h2 id="portfolio">Portfolio</h2>
       <p>
-        これまでに作成したウェブサイトの例です。PC、スマホどちらからもご覧いただけます。
+        これまでに作成したウェブサイト、ウェブアプリの例です。PC、スマホどちらからもご覧いただけます。
       </p>
       <p><i class="fab fa-github"></i> <a href="https://github.com/sidemt">GitHub</a></p>
 
       <div class="project">
         <h3>Personal Projects</h3>
         <div class="row gallery-row">
+          <div class="col-lg-4 col-md-6 col-sm-12 gallery-col">
+            <div class="card">
+              <img src="assets/pom-cal.PNG" class="gallery-image card-img-top" alt="Pom-Cal 画面イメージ">
+              <div class="card-body">
+                <h5 class="card-title"><a href="https://toolsiwant.net/pom-cal/" target="_blank">Pom-Cal</a></h5>
+                <p class="card-text">
+                  Googleカレンダーと連携できるポモドーロタイマーです。（25分作業・5分休憩のサイクルを繰り返すタイマー）<br>
+                  作業した時間をGoogleカレンダーに自動で記録できます。
+                </p>
+                <ul class="card-text">
+                  <li>タイマーの表示にはReactを使用</li>
+                  <li>GoogleカレンダーAPIを使用し、作業時間を自動で記録</li>
+                  <li>レスポンシブレイアウト</li>
+                </ul>
+                <p class="card-text tech-info">
+                  使用言語: JavaScript, HTML, CSS <br>
+                  使用フレームワーク: React, babel <br>
+                  その他: Google Calendar API
+                </p>
+                <i class="fab fa-github"></i> 
+                <a href="https://github.com/sidemt/pomcal" class="card-link" target="_blank">コードを見る</a>
+              </div>
+            </div>
+          </div>
+
           <div class="col-lg-4 col-md-6 col-sm-12 gallery-col">
             <div class="card">
               <img src="assets/on-the-day.PNG" class="gallery-image card-img-top" alt="On The Day 画面イメージ">
@@ -98,8 +123,7 @@
               <div class="card-body">
                 <h5 class="card-title"><a href="https://toolsiwant.net/markdown-to-html/" target="_blank">Markdown to HTML</a></h5>
                 <p class="card-text">
-                  Markdownのプレビュー、およびHTMLに変換したコードを取得できるシンプルなツールです。<br>
-                  独自ドメインで公開しています。
+                  Markdownという記法で入力した文章をHTMLに変換してプレビュー、およびHTMLに変換したコードを取得できるシンプルなツールです。
                 </p>
                 <ul class="card-text">
                   <li>入力内容をリアルタイムにプレビュー・変換</li>
@@ -112,6 +136,38 @@
                 </p>
                 <i class="fab fa-github"></i> 
                 <a href="https://github.com/sidemt/markdown-to-html" class="card-link" target="_blank">コードを見る</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Open Source Contribution</h3>
+        <p>
+          オープンソースとして公開されているプロジェクトの開発に参加した実績です。
+        </p>
+        <div class="row gallery-row">
+          <div class="col-lg-4 col-md-6 col-sm-12 gallery-col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">dev.to (DEV Community)</h5>
+                <p class="card-text">
+                  <a href="https://dev.to/" target="_blank">dev.to (DEV Community)</a>というサイトのユーザープロフィールにGitLabへのリンク欄を追加しました。<br>
+                  主にRuby on Railsが使用されているプロジェクトです。
+                </p>
+                <ul class="card-text">
+                  <li>データベースに新規カラム追加、併せてユーザー情報更新機能の変更対応</li>
+                  <li>入力欄とプロフィール画面の表示を追加</li>
+                  <li>テスト用のコードを追加(RSpec)</li>
+                </ul>
+                <p class="card-text tech-info">
+                  使用言語: Ruby, HTML etc. <br>
+                  使用フレームワーク: Ruby on Rails, RSpec etc.<br>
+                </p>
+                <i class="fab fa-github"></i> 
+                <a href="https://github.com/thepracticaldev/dev.to/pull/1121" class="card-link" target="_blank">プルリクエストを見る</a>
               </div>
             </div>
           </div>
@@ -146,30 +202,6 @@
                 </p>
                 <i class="fab fa-github"></i> 
                 <a href="https://github.com/sidemt/local-weather" class="card-link" target="_blank">コードを見る</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12 gallery-col">
-            <div class="card">
-              <img src="assets/pomodoro-clock.PNG" class="gallery-image card-img-top" alt="Pomodoro Clock 画面イメージ">
-              <div class="card-body">
-                <h5 class="card-title"><a href="https://sidemt.github.io/pomodoro-clock/" target="_blank">Pomodoro
-                    Clock</a></h5>
-                <p class="card-text">
-                  ポモドーロテクニックと呼ばれる25分作業・5分休憩のサイクルを繰り返すタイマーです。
-                </p>
-                <ul class="card-text">
-                  <li>作業中と休憩中で背景色を変更</li>
-                  <li>タイマー終了時に音を再生</li>
-                  <li>レスポンシブレイアウト</li>
-                </ul>
-                <p class="card-text tech-info">
-                  使用言語: JavaScript, HTML, CSS <br>
-                  使用フレームワーク: React <br>
-                </p>
-                <i class="fab fa-github"></i> 
-                <a href="https://github.com/sidemt/pomodoro-clock" class="card-link" target="_blank">コードを見る</a>
               </div>
             </div>
           </div>
@@ -245,29 +277,6 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 col-sm-12 gallery-col">
-            <div class="card">
-              <img src="assets/markdown-previewer.PNG" class="gallery-image card-img-top" alt="Markdown Previewer 画面イメージ">
-              <div class="card-body">
-                <h5 class="card-title"><a href="https://sidemt.github.io/markdown-previewer/" target="_blank">Markdown
-                    Previewer</a></h5>
-                <p class="card-text">
-                  Markdownという記法で入力した文章をHTMLに変換してプレビューします。
-                </p>
-                <ul class="card-text">
-                  <li>入力内容をリアルタイムにプレビュー</li>
-                  <li>MarkdownからHTMLへの変換には既存ライブラリ(Marked)を使用</li>
-                  <li>レスポンシブレイアウト</li>
-                </ul>
-                <p class="card-text tech-info">
-                  使用言語: JavaScript, HTML, CSS <br>
-                  使用フレームワーク: React <br>
-                </p>
-                <i class="fab fa-github"></i> 
-                <a href="https://github.com/sidemt/markdown-previewer" class="card-link" target="_blank">コードを見る</a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
